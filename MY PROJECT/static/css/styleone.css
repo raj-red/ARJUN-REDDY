@@ -1,0 +1,29 @@
+form {
+  /* border-top: 5px solid ; */
+  padding:10px;
+  font-family:cursive;
+  /* cell-spacing:10px; */
+  align-items: center;
+}
+/* tr:hover{
+  background-color:yellow;
+} */
+
+table{
+  border-collapse:collapse;
+  width:30%;
+  text-align:center;
+}
+/* thead {
+  background-color:green;
+  color:red;
+} */
+input{
+  color:red;
+}
+form,table{
+  padding:20px;
+  color:pink;
+  background-color:yellow;
+  align:center;
+}

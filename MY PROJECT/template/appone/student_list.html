@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+  </head>
+  <body>
+    <h1> STUDENT DETAILS </h1>
+    <table border="2">
+      <thead>
+        <th>ID</th>
+        <th>STUDENT NAME</th>
+        <th>MOTHER NAME</th>
+        <th>FATHER NAME</th>
+        <th>STUDENT CLASS</th>
+        <th>STUDENT AGE</th>
+        <th>MOBILE NUMBER</th>
+        <th>VILLAGE/TOWN</th>
+      </thead>
+      {% for i in student_list %}
+      <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.studentname}}</td>
+        <td>{{i.studentmothername}}</td>
+        <td>{{i.studentfathername}}</td>
+        <td>{{i.studentclass}}</td>
+        <td>{{i.studentage}}</td>
+        <td>{{i.studentmobilenumber}}</td>
+        <td>{{i.studentvillage}}</td>
+        <td><a href="/update/{{i.id}}"> UPDATE </a></td>
+        <td><a href="/delete/{{i.id}}"> DELETE </a></td>
+        <!-- <td><a href="//{{i.ID}}"> UPDATE </a></td> -->
+      </tr>
+      {% endfor %}
+    </table>
+    <br>
+    <br>
+    <a href="/create"> Add STUDENT </a>
+  </body>
+
+</html>

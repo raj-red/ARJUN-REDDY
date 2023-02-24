@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/styleone.css" %}">
+  </head>
+  <body>
+    <h1> STUDENT FORM </h1>
+    <form method="post">
+      <table>
+        {{form.as_table}}
+        {% csrf_token %}
+      </table>
+      <br>
+      <input type="submit" name="" value="save">
+    </form>
+
+  </body>
+</html>

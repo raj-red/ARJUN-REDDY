@@ -1,0 +1,21 @@
+table, th, td {
+  border-top: 5px solid blue;
+  padding:15px;
+  font-family:cursive;
+}
+tr:hover{
+  background-color:blue;
+}
+
+table{
+  border-collapse:collapse;
+  width:100%;
+  text-align:center;
+}
+thead {
+  background-color:green;
+  color:red;
+}
+a{
+  color:red;
+}
