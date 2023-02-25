@@ -1,0 +1,69 @@
+<html>
+<head>
+<title> WEB PAGE CREATION </title>
+<style>
+fieldset div{
+text-align:center;
+}
+</style>
+<body>
+<fieldset>
+<div>
+<h1> THIS IS ONE FORM </h1>
+<form name="myform" method="post" onsubmit="return create()" action="javavalidations1.html">
+Your Name: <input type="text" name="name" pattern="[a-zA-Z ]{2,}" title="Name must contain alphabets" required><br>
+Password:<input type="password" name="password" required> <br>
+Confirm Password:<input type="password" name="password1" required> <br>
+Enter Your Mail:<input type="name" name="email" required><br>
+Enter you DOB:<input type="date" name="date" required><br><br>
+Enter your Mobile Number:<input type="number" name="mobile"><br><br><br>
+<input type="submit" value="submit">
+</form>
+<script>
+function create(){
+var name=document.myform.name.value;
+if(name=="null" || name==""){
+alert("Please provide correct name");
+return false;
+}
+{
+var password=document.myform.password.value;
+var cpassword=document.myform.password1.value;
+if(password.length<6){
+alert("Password must contain 6 characters");
+}
+if(password==cpassword){
+return true;
+}else
+{
+alert("Password and Confirm password must be same");
+return false;
+}}
+{
+var email2=document.myform.email.value;
+var atposition=email2.indexOf("@");
+var dotposition=email2.lastIndexOf(".");
+if(atposition<1 || dotposition<atposition+2 || dotposition+2>=email2.length){
+alert("Please enter valid email");
+return false;}}{
+var curdate=new Date();
+var dob2=new Date(document.myform.date.value);
+if(dob2 > curdate){
+alert("please enter valid DOB");
+return false;}}
+{
+var mobile2=document.myform.mobile.value;
+if(mobile2.length==10){
+return true;
+}else{
+alert("Enter 10 digit valid number");
+}
+return false;
+}
+}
+</script>
+</div>
+</fieldset>
+</body>
+</head>
+</html>
