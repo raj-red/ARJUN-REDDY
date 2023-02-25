@@ -1,0 +1,25 @@
+HTTp:
+      http is a state less protocall,if a protocall is straightless it means a server 
+doesn't maintain a continue server.
+
+SCALEBILITY:
+        there a no of scalability differentapps and different webserver they are not work
+on the same server
+
+SESSION TRACKING:
+        to maintain the stateless of http 
+ex: you are maintain a one ekart application to maintain session management.
+
+SESSION:
+        a session can be devided in two ways 1.[login/logout],2.[trag user interaction]
+suppose we are accessing the website from that still close your browser or leave the 
+website.
+
+COOKIES:
+1.cookies support:
+         request.session
+                  set_test_cookie()
+                  test_cookie_worked()
+                  delete_test_cookie
+
+

@@ -1,0 +1,15 @@
+<html>
+<head>
+<title> func </title>
+</head>
+<body bgcolor="aqua">
+<h1> rajesh reddy</h1>
+<script>
+function raj()
+{
+document.write("welcome to grk trinings");
+}
+</script>
+<input type="button"value="click here" onclick="raj()"/>
+</body>
+</html>

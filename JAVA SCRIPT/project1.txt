@@ -1,0 +1,81 @@
+Microsoft Windows [Version 10.0.19045.2364]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\DJANGO DJANGO>mkdir project1
+
+D:\DJANGO DJANGO>cd project1
+
+D:\DJANGO DJANGO\project1>python -m venv env
+
+D:\DJANGO DJANGO\project1>cd env\scripts
+
+D:\DJANGO DJANGO\project1\env\Scripts>activate
+'crumb' is not recognized as an internal or external command,
+operable program or batch file.
+'crumb' is not recognized as an internal or external command,
+operable program or batch file.
+'crumb' is not recognized as an internal or external command,
+operable program or batch file.
+'crumb' is not recognized as an internal or external command,
+operable program or batch file.
+'crumb' is not recognized as an internal or external command,
+operable program or batch file.
+'crumb' is not recognized as an internal or external command,
+operable program or batch file.
+'crumb' is not recognized as an internal or external command,
+operable program or batch file.
+'crumb' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) D:\DJANGO DJANGO\project1\env\Scripts>pip install django
+Collecting django
+  Using cached Django-4.1.5-py3-none-any.whl (8.1 MB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.3-py3-none-any.whl (42 kB)
+Collecting asgiref<4,>=3.5.2
+  Using cached asgiref-3.6.0-py3-none-any.whl (23 kB)
+Collecting tzdata
+  Using cached tzdata-2022.7-py2.py3-none-any.whl (340 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.6.0 django-4.1.5 sqlparse-0.4.3 tzdata-2022.7
+WARNING: You are using pip version 22.0.4; however, version 22.3.1 is available.
+You should consider upgrading via the 'D:\DJANGO DJANGO\project1\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) D:\DJANGO DJANGO\project1\env\Scripts>django-admin manage.py startproject project1
+No Django settings specified.
+Unknown command: 'manage.py'
+Type 'django-admin help' for usage.
+
+(env) D:\DJANGO DJANGO\project1\env\Scripts>django-admin startproject project1
+
+(env) D:\DJANGO DJANGO\project1\env\Scripts>cd project1
+
+(env) D:\DJANGO DJANGO\project1\env\Scripts\project1>python manage.py startapp app1
+
+(env) D:\DJANGO DJANGO\project1\env\Scripts\project1>python manage.py startapp app2
+
+(env) D:\DJANGO DJANGO\project1\env\Scripts\project1>
+---------------------------------------------------------
+Microsoft Windows [Version 10.0.19045.2364]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\DJANGO DJANGO\project1\env\Scripts\project1>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 05, 2023 - 10:50:58
+Django version 4.1.4, using settings 'project1.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /
+[05/Jan/2023 10:51:23] "GET / HTTP/1.1" 404 2269
+Not Found: /
+[05/Jan/2023 10:51:24] "GET / HTTP/1.1" 404 2269
+Not Found: /favicon.ico
+[05/Jan/2023 10:51:24] "GET /favicon.ico HTTP/1.1" 404 2320
+[05/Jan/2023 10:51:37] "GET /one/ HTTP/1.1" 200 104
+[05/Jan/2023 10:51:49] "GET /two/ HTTP/1.1" 200 94

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> VALIDATIONS IN JAVASCRIPT </title>
+</head>
+<body>
+<h1> FORM VALIDATION IN JAVASCRIPT </h1>
+<form name="myform" method="post" onsubmit="return validpassword()" action="javavalidations1.html">
+Password:
+<input type="password" name="password"> <br>
+Confirm Password:
+<input type="password" name="password1"> <br>
+<input type="submit" value="submit">
+</form>
+<script>
+function validpassword(){
+var password=document.myform.password.value;
+var cpassword=document.myform.password1.value;
+if(password.length<6){
+alert("Password must contain 6 characters");
+return false;
+}
+if(password==cpassword){
+return true;
+}else
+{
+alert("Password and Confirm password must be same");
+return false;
+}
+
+
+
+</body>
+</html>

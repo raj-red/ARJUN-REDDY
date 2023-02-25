@@ -1,0 +1,22 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>Form validation in javascript</h1>
+<form name="myform" method="post" onsubmit="return validname()" action="javavalidations1.html">
+Your Name: <input type="text" name="name" pattern="[a-zA-Z ]{2,}" title="Name must contain alphabets">
+<br>
+<input type="submit" value="submit">
+</form>
+<script>
+function validname(){
+var name=document.myform.name.value;
+if(name=="null" || name==""){
+alert("Please provide correct name");
+return false;
+}
+}
+</script>
+</body>
+</html>

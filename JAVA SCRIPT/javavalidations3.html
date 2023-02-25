@@ -1,0 +1,24 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1>Form validation in javascript</h1>
+<form name="myform" method="post" onsubmit="return mobilevalid()"    action="javavalidations1.html">
+Enter your Mobile Number:<input type="number" name="mobile"><br><br>
+<input type="submit" value="submit">
+</form>
+<script>
+function mobilevalid(){
+var mobile2=document.myform.mobile.value;
+if(mobile2.length==10){
+return true;
+}else{
+alert("Enter 10 digit valid number");
+}
+return false;
+}
+</script>
+
+</body>
+</html>

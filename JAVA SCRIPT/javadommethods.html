@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> DOM (document object model) </title>
+</head>
+<body>
+<h1>methods</h1>
+<p> write ,getElementById, getElementByName</p>
+<script>
+document.write("RAJESH");
+</script>
+<script>
+function raj(){
+var a=document.getElementById("num").value;
+alert("the answer is  "+a*a*a);
+}
+</script>
+<form>
+enter num:<input type="text" id="num">
+<br>
+<input type="button" value="findcube" onclick="raj()">
+</form>
+<script>
+function red(){
+var name=document.form1.urname.value;
+alert("welcome"+name);
+}
+</script>
+<form name="form1">
+enter name:<input type="text"name="urname">
+<br>
+<input type="button" value="print" onclick="red()">
+</body>
+</html>
