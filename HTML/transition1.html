@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> transition </title> 
+<style>
+div{width:200px;
+ height:200px;
+ margin:15px;
+color:white;
+background:blue;
+border-radius:50%;
+text-align:center;
+transition:all 1s ease:}
+div:hover{transform:translateX(127px);
+}
+.ease{transition-timing-function:ease;}
+.linear{transition-timing-function:linear;}
+.ease-in{transition-timing-function:ease-in;}
+.ease-out{transition-timing-function:ease-out;}
+.ease-in-out{transition-timing-function:ease-in-out;}
+
+</style>
+</head>
+<body>
+<div class="default">default</div>
+<div class="ease">ease</div>
+<div class="linear">linear</div>
+<div class="ease-in">ease-in</div>
+<div class="ease-out">ease-out</div>
+<div class="ease-in-out">ease-in-out</div>
+</body>
+</html>

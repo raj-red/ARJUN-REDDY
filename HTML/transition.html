@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> TRANSITION PROPERTIES </title>
+<style>
+div{
+display:inline-block;
+width:250px;
+height:250px;
+}
+div:hover{
+background-color:pink;
+}
+.one{
+background-color:red;
+}
+.two{
+background-color:green;
+}
+.three{
+background-color:blue;
+transition-property:background,border-radius;
+transition-duration:5s;
+tranisition-delay:3s;
+}
+.three:hover{
+border-radius:75%;
+}
+</style>
+</head>
+<body>
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+</body>
+</html>
